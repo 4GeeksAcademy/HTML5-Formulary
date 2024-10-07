@@ -8,111 +8,87 @@
     <title>HTML5 Forlulary</title>
 </head>
 <body> 
-    <div class="border col-7 position-absolute top-0 start-50 translate-middle-x">
-    <div class="border bg-body-tertiary">
-        <h1>Paymen form example</h1>
-    </div>
-
-    <div class="border bg-danger-subtle ">
-        <p>Some filds are missing</p>
-    </div>
-
-    <div class="d-flex p-1">
-        <fieldset class="w-50 p-3">
-        <label for="txtCard">Card #</label>
-        <input type="card" name="card" placeholder="XXXXXXXXX" class="form-control" id="txtCard"/>
-        </fieldset>
-        
-        <fieldset class="w-25 p-3">
-            <label for="txtCVC">CVC #</label>
-            <input type="CVC" name="CVC" placeholder="0000" class="form-control" id="txtCVC"/>
-        </fieldset>
-
-        <fieldset class="w-25 p-3">
-            <label for="txtAmount">Amount #</label>
-            <input type="amount" name="amount placeholder="Amount" class="form-control" id="txtAmount"/>
-        </fieldset>
-    </div>
-
-    <div class="d-flex p-2">
-    <div class="d-flex p-1 w-50">
-        <form action="" method="post">
-
-        <fieldset class="w-auto p-3 ">
-        <label for="txtFirstName">First Name</label>
-        <input type="firstname" name="firstname" placeholder="" class="form-control" id="txtFirstName"/>
-        </fieldset>
-              
-        <fieldset class="w-100 p-3">
-            <label for="txtCity">City</label>
-            <input type="city" name="city" placeholder="" class="form-control" id="txtCity"/>
-        </fieldset>
-
-        <p>We accept</p>    
-
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-diners-club"></i></label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-mastercard"></i></label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-discover"></i></label>
-          </div>
-        </form>
-
-        </div>
-
-
-        <div class="d-flex justify-content-end">
-
-            <div class="d-flex">
-
-                <form action="" method="post">
-        
-                <fieldset class="w-auto p-3 ">
-                <label for="txtLastName">Last Name</label>
-                <input type="lastname" name="lastname" placeholder="" class="form-control" id="txtLastName"/>
-                </fieldset>
-                      
-                <fieldset class=" p-3">
-                    <label for="txtCity">State</label>
-                    <div class="d-flex p-1">
-                        <select class="form-selectgi" id="inputGroupSelect04" aria-label="Example select with button addon" placeholder="Pick a state">
-                          <option selected>Pick a state</option>
-                          <option value="1">Iowa</option>
-                          <option value="2">South Carolina</option>
-                          <option value="3">South Dacota</option>
-                        </select>
-                        <div class=" p-1">
-                            <fieldset class="w-auto p-3 ">
-                                <label for="txtPostalCode">Postal Code</label>
-                                <input type="postalcode" name="postalcode" placeholder="" class="form-control" id="txtPostalCode"/>
-                                </fieldset>
-                        </div>
-                    </div>
-                </fieldset>
-                  
-                <fieldset class=" p-3">
-                    <label for="txtMessage">Message</label>
-                    <textarea name="message" id="txtMessage" class="form-control"></textarea>
-                </fieldset>
-                
-                </form>
+    <div class="container border rounded mt-4">
+        <div class="row">
+            <div class="col-12 bg-body-tertiary border-bottom rounded ">
+                <h1>Paymen form example</h1>
+            </div>
+            <div class="col-12 mt-3">
+                <p class="alert alert-danger">Some filds are missing</p>
+            </div>
+            <div class="col-12 col-md-5">
+                <label for="txtCard">Card #</label>
+                <input type="card" name="card" placeholder="XXXXXXXXX" class="form-control" id="txtCard" />
+            </div>
+            <div class="col-12 col-md-3">
+                <label for="txtCVC">CVC #</label>
+                <input type="CVC" name="CVC" placeholder="0000" class="form-control" id="txtCVC" />
+            </div>
+            <div class="col-12 col-md-4">
+                <label for="txtAmount">Amount #</label>
+                <div class="d-flex align-items-center">
+                    <span class="px-1"><strong>$</strong></span>
+                    <input type="amount" name="amount placeholder=" Amount" class="form-control" id="txtAmount" />
                 </div>
             </div>
-              
-    </div>
-
-
-    <div class="d-flex justify-content-end">
-        <button type="button" class="btn btn-secondary btn-sm">Cancel</button>
-        <button type="button" class="btn btn-primary btn-sm">Send</button>
-        
-    </div>
+            <div class="col-12 col-md-6 mt-2">
+                <label for="txtFirstName">First Name</label>
+                <input type="firstname" name="firstname" placeholder="" class="form-control" id="txtFirstName" />
+            </div>
+            <div class="col-12 col-md-6 mt-2">
+                <label for="txtCity">Last Name</label>
+                <input type="city" name="lastname" placeholder="" class="form-control" id="txtCity" />
+            </div>
+            <div class="col-12 col-md-6 mt-2">
+                <label for="txtCity">City</label>
+                <input type="city" name="city" placeholder="" class="form-control" id="txtCity" />
+            </div>
+            <div class="col-12 col-md-3 mt-2">
+                <label for="txtCity">State</label>
+                <select class="form-control" id="inputGroupSelect04" aria-label="Example select with button addon"
+                    placeholder="Pick a state">
+                    <option selected>Pick a state</option>
+                    <option value="1">Iowa</option>
+                    <option value="2">South Carolina</option>
+                    <option value="3">South Dacota</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-3 mt-2">
+                <label for="txtPostalCode">Postal Code</label>
+                <input type="postalcode" name="postalcode" placeholder="" class="form-control" id="txtPostalCode" />
+            </div>
+            <div class="col-12 col-md-6 mt-2 ">
+                <p>We accept</p>
+                <div class="bg-secondary p-2 w-50">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><i
+                                class="fa-brands fa-cc-diners-club"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><i
+                                class="fa-brands fa-cc-mastercard"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><i
+                                class="fa-brands fa-cc-discover"></i></label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-2">
+                <label for="txtMessage">Message</label>
+                <textarea name="message" id="txtMessage" class="form-control"></textarea>
+            </div>
+            <div class="col-12 bg-body-tertiary border-top mt-3 p-3 d-flex justify-content-end gap-3">
+                <button type="button" class="btn btn-secondary btn-sm">Cancel</button>
+                <button type="button" class="btn btn-primary btn-sm">Send</button>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
